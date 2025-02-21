@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verificador de Idade</title>
+  </head>
+  <body>
+    <header><h1>Verificador de Idade</h1></header>
+
+    <section>
+      <div class="anodenascimento_div">
+        <p>Ano de Nascimento</p>
+
+        <input type="number" name="Ano" id="anoinput" min="0" />
+      </div>
+
+      <div class="sexo_div">
+        <p>Sexo:</p>
+
+        <!-- Tem que ser Type="radio" pra marcar, e o name="#" tem que ser o mesmo nome, pra não marcar os dois -->
+
+        <input type="radio" name="sexoescolha" id="Masculino" checked />
+
+        <label for="Masculino">Masculino</label>
+
+        <input type="radio" name="sexoescolha" id="Feminino" />
+
+        <label for="Feminino">Feminino</label>
+      </div>
+
+      <div class="botao">
+        <input
+          class="verificar_botao"
+          type="button"
+          value="Verificar"
+          onclick="verificar()"
+        />
+      </div>
+
+      <div id="res"></div>
+
+      <div id="img"></div>
+    </section>
+
+    <script src="/exercicio 2/script.js"></script>
+  </body>
+</html>
